@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Icons.email,
                 color: Colors.white,
               ),
-              hintText: 'Ingrese su correo',
+              hintText: 'Ingrese su celular',
               hintStyle: kHintTextStyle,
             ),
           ),
@@ -151,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Column(
       children: <Widget>[
         Text(
-          '- OR -',
+          '- INGRESA COMO INVITADO -',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w400,
@@ -159,14 +159,14 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         SizedBox(height: 20.0),
         Text(
-          'Ingrese con',
+          '¿No es cliente BBVA?',
           style: kLabelStyle,
         ),
       ],
     );
-  }
+  } 
 
-  Widget _buildSocialBtn(Function onTap, AssetImage logo) {
+/*  Widget _buildSocialBtn(Function onTap, AssetImage logo) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -188,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
-  }
+  } */
 
   /*Widget _buildSocialBtnRow() {
     return Padding(
@@ -220,19 +220,11 @@ class _LoginScreenState extends State<LoginScreen> {
         text: TextSpan(
           children: [
             TextSpan(
-              text: '¿No es cliente BBVA? ',
+              text: 'Ingrese como invitado',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
                 fontWeight: FontWeight.w400,
-              ),
-            ),
-            TextSpan(
-              text: 'Regístrese como invitado',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-                fontWeight: FontWeight.bold,
               ),
             ),
           ],
@@ -296,8 +288,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildForgotPasswordBtn(),
                       _buildRememberMeCheckbox(),
                       _buildLoginBtn(),
-                      _buildSignInWithText(),
-                      _buildSocialBtnRow(),
                       _buildSignupBtn(),
                     ],
                   ),
