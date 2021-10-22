@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'Usuario',
+          'Número celular',
           style: kLabelStyle,
         ),
         SizedBox(height: 10.0),
@@ -147,24 +147,31 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildSignInWithText() {
-    return Column(
-      children: <Widget>[
-        Text(
-          '- INGRESA COMO INVITADO -',
+  Widget _buildLoginBtnInvite() {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 250.0),
+      width: double.infinity,
+      child: RaisedButton(
+        elevation: 5.0,
+        onPressed: () => print('Login Button Pressed'),
+        padding: EdgeInsets.all(15.0),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        color: Colors.white,
+        child: Text(
+          'Ingrese como invitado',
           style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w400,
+            color: Color(0xFF527DAA),
+            letterSpacing: 1.5,
+            fontSize: 18.0,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'OpenSans',
           ),
         ),
-        SizedBox(height: 20.0),
-        Text(
-          '¿No es cliente BBVA?',
-          style: kLabelStyle,
-        ),
-      ],
+      ),
     );
-  } 
+  }
 
 /*  Widget _buildSocialBtn(Function onTap, AssetImage logo) {
     return GestureDetector(
@@ -288,6 +295,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildForgotPasswordBtn(),
                       _buildRememberMeCheckbox(),
                       _buildLoginBtn(),
+                      _buildLoginBtnInvite(),
                       _buildSignupBtn(),
                     ],
                   ),
