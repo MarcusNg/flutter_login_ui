@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'Email',
+          'Usuario',
           style: kLabelStyle,
         ),
         SizedBox(height: 10.0),
@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Icons.email,
                 color: Colors.white,
               ),
-              hintText: 'Enter your Email',
+              hintText: 'Ingrese su correo',
               hintStyle: kHintTextStyle,
             ),
           ),
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'Password',
+          'Contraseña',
           style: kLabelStyle,
         ),
         SizedBox(height: 10.0),
@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Icons.lock,
                 color: Colors.white,
               ),
-              hintText: 'Enter your Password',
+              hintText: 'Ingrese su contraseña',
               hintStyle: kHintTextStyle,
             ),
           ),
@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
         onPressed: () => print('Forgot Password Button Pressed'),
         padding: EdgeInsets.only(right: 0.0),
         child: Text(
-          'Forgot Password?',
+          'Olvidé mi contraseña',
           style: kLabelStyle,
         ),
       ),
@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           Text(
-            'Remember me',
+            'Recuérdame',
             style: kLabelStyle,
           ),
         ],
@@ -134,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         color: Colors.white,
         child: Text(
-          'LOGIN',
+          'Entrar',
           style: TextStyle(
             color: Color(0xFF527DAA),
             letterSpacing: 1.5,
@@ -159,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         SizedBox(height: 20.0),
         Text(
-          'Sign in with',
+          'Ingrese con',
           style: kLabelStyle,
         ),
       ],
@@ -197,13 +197,13 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           _buildSocialBtn(
-            () => print('Login with Facebook'),
+            () => print('Ingrese con Facebook'),
             AssetImage(
               'assets/logos/facebook.jpg',
             ),
           ),
           _buildSocialBtn(
-            () => print('Login with Google'),
+            () => print('Ingrese con Google'),
             AssetImage(
               'assets/logos/google.jpg',
             ),
@@ -220,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> {
         text: TextSpan(
           children: [
             TextSpan(
-              text: 'Don\'t have an Account? ',
+              text: '¿No es cliente BBVA? ',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
@@ -228,7 +228,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             TextSpan(
-              text: 'Sign Up',
+              text: 'Regístrese como invitado',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
@@ -258,10 +258,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color(0xFF73AEF5),
-                      Color(0xFF61A4F1),
+                      Color(0xFF004481),
                       Color(0xFF478DE0),
                       Color(0xFF398AE5),
+                      Color(0xFF61A4F1),
                     ],
                     stops: [0.1, 0.4, 0.7, 0.9],
                   ),
@@ -279,7 +279,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Sign In',
+                        'BBVA',
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'OpenSans',
