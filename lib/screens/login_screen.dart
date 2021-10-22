@@ -190,7 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildSocialBtnRow() {
+  /*Widget _buildSocialBtnRow() {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 30.0),
       child: Row(
@@ -211,7 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ],
       ),
     );
-  }
+  } */
 
   Widget _buildSignupBtn() {
     return GestureDetector(
