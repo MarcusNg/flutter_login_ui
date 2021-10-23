@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildLoginBtnInvite() {
+/*  Widget _buildLoginBtnInvite() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 250.0),
       width: double.infinity,
@@ -171,7 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
-  }
+  } */
 
   Widget _buildSocialBtn(Function onTap, AssetImage logo) {
     return GestureDetector(
@@ -181,6 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
         width: 214.0,
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
+<<<<<<< Updated upstream
           color: Colors.white,
           boxShadow: [
             BoxShadow(
@@ -189,13 +190,19 @@ class _LoginScreenState extends State<LoginScreen> {
               blurRadius: 6.0,
             ),
           ],
+=======
+>>>>>>> Stashed changes
           image: DecorationImage(
             image: logo,
           ),
         ),
       ),
     );
+<<<<<<< Updated upstream
   }
+=======
+  } 
+>>>>>>> Stashed changes
 
   Widget _buildSocialBtnRow() {
     return Padding(
@@ -206,6 +213,7 @@ class _LoginScreenState extends State<LoginScreen> {
           _buildSocialBtn(
             () => print('Generar código'),
             AssetImage(
+<<<<<<< Updated upstream
               'assets/logos/token_movil.jpg',
             ),
           ),
@@ -213,6 +221,15 @@ class _LoginScreenState extends State<LoginScreen> {
             () => print('Operación con CoDi'),
             AssetImage(
               'assets/logos/qr_codi.jpg',
+=======
+              'assets/logos/token_movil.png',
+            ),
+          ),
+          _buildSocialBtn(
+            () => print('Hacer pago con CoDI'),
+            AssetImage(
+              'assets/logos/qr_codi.png',
+>>>>>>> Stashed changes
             ),
           ),
         ],
@@ -295,9 +312,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildForgotPasswordBtn(),
                       _buildRememberMeCheckbox(),
                       _buildLoginBtn(),
-                      _buildLoginBtnInvite(),
                       _buildSignupBtn(),
                       _buildSocialBtnRow(),
+<<<<<<< Updated upstream
+=======
+                      _buildSocialBtn(),
+>>>>>>> Stashed changes
                     ],
                   ),
                 ),
