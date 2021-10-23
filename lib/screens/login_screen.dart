@@ -173,14 +173,14 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-/*  Widget _buildSocialBtn(Function onTap, AssetImage logo) {
+  Widget _buildSocialBtn(Function onTap, AssetImage logo) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 60.0,
-        width: 60.0,
+        height: 123.0,
+        width: 214.0,
         decoration: BoxDecoration(
-          shape: BoxShape.circle,
+          shape: BoxShape.rectangle,
           color: Colors.white,
           boxShadow: [
             BoxShadow(
@@ -195,30 +195,30 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
-  } */
+  }
 
-  /*Widget _buildSocialBtnRow() {
+  Widget _buildSocialBtnRow() {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 30.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           _buildSocialBtn(
-            () => print('Ingrese con Facebook'),
+            () => print('Generar código'),
             AssetImage(
-              'assets/logos/facebook.jpg',
+              'assets/logos/token_movil.jpg',
             ),
           ),
           _buildSocialBtn(
-            () => print('Ingrese con Google'),
+            () => print('Operación con CoDi'),
             AssetImage(
-              'assets/logos/google.jpg',
+              'assets/logos/qr_codi.jpg',
             ),
           ),
         ],
       ),
     );
-  } */
+  }
 
   Widget _buildSignupBtn() {
     return GestureDetector(
@@ -227,7 +227,7 @@ class _LoginScreenState extends State<LoginScreen> {
         text: TextSpan(
           children: [
             TextSpan(
-              text: 'Ingrese como invitado',
+              text: 'Otras operaciones',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
@@ -297,6 +297,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildLoginBtn(),
                       _buildLoginBtnInvite(),
                       _buildSignupBtn(),
+                      _buildSocialBtnRow(),
                     ],
                   ),
                 ),
