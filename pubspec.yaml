@@ -37,8 +37,8 @@ flutter:
   uses-material-design: true
 
   assets:
-   - assets/logos/facebook.jpg
-   - assets/logos/google.jpg
+   - assets/logos/qr_codi.jpg
+   - assets/logos/token_movil.jpg
 
 
   fonts:

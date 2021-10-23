@@ -149,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _buildLoginBtnInvite() {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 250.0),
+      padding: EdgeInsets.symmetric(vertical: 50.0),
       width: double.infinity,
       child: RaisedButton(
         elevation: 5.0,
@@ -297,6 +297,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildLoginBtn(),
                       _buildSignupBtn(),
                       _buildSocialBtnRow(),
+                      _buildLoginBtnInvite()
                     ],
                   ),
                 ),
